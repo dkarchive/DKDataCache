@@ -51,4 +51,4 @@ DKDataCache includes a sample project in the `Demo` folder.
 - [Send a message](http://dkhamsing.tumblr.com/ask)
 
 # License
-DKScrollingTabController is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+DKDataCache is available under the MIT license. See the [LICENSE](LICENSE) file for more info.

@@ -2,8 +2,19 @@
 
 Simple iOS Data Cache
 
+[![Build Status](https://travis-ci.org/dkhamsing/DKDataCache.svg?branch=master)](https://travis-ci.org/dkhamsing/DKDataCache)
+[![Version](https://img.shields.io/cocoapods/v/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
+[![License](https://img.shields.io/cocoapods/l/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
+[![Platform](https://img.shields.io/cocoapods/p/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
+
 # Installation
 
+## Cocoapods
+``` ruby
+pod 'DKDataCache'
+```
+
+## Manual
 Add the files in the DKDataCache folder to your project.
 
 # Usage
@@ -22,14 +33,13 @@ if (data) {
 NSURL *url = [NSURL URLWithString:key];
 NSURLRequest *request = [NSURLRequest requestWithURL:url];
 [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        if (data) {
-	        // set cache
-            [[DKDataCache sharedInstance] cacheData:data forKey:key];
-            UIImage *image = [UIImage imageWithData:data];
-			// nice
-        }
-    }];
-
+  if (data) {
+    // set cache
+    [[DKDataCache sharedInstance] cacheData:data forKey:key];
+    UIImage *image = [UIImage imageWithData:data];
+    // nice
+  }
+}];
 ```
 
 # Demo

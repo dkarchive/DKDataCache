@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: Demo/DKDataCacheDemo.xcodeproj
+xcode_scheme: DKDataCacheDemo
+xcode_sdk: iphonesimulator

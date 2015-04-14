@@ -7,6 +7,8 @@ Simple iOS Data Cache
 [![License](https://img.shields.io/cocoapods/l/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
 [![Platform](https://img.shields.io/cocoapods/p/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
 
+DKDataCache can be used to cache images retrieved from an URL
+
 # Installation
 
 ## Cocoapods

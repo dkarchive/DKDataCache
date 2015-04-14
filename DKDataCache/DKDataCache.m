@@ -7,8 +7,6 @@
 
 #import "DKDataCache.h"
 
-static const NSInteger kMaxNumberOfElements = 100;
-
 static const NSInteger kNumberOfSecondsToLive = 60 * 5;
 
 static const NSString *kKeyDate = @"kKeyDate";
@@ -26,6 +24,7 @@ static const NSString *kkeyData = @"kKeyData";
     if (!self)
         return nil;
     
+    self.numberOfElements = 100;
     [self clearCache];
     
     return self;
@@ -42,7 +41,10 @@ static const NSString *kkeyData = @"kKeyData";
 }
 
 - (void)cacheData:(NSData *)data forKey:(NSString *)key {
-    if (self.cacheDictionary.count>kMaxNumberOfElements) {
+    if (self.cacheDictionary.count>self.numberOfElements) {
+        if (self.log) {
+            NSLog(@"DKDataCache reached limit of %@ elements", @(self.numberOfElements));
+        }
         [self clearCache];
     }
     
@@ -53,6 +55,9 @@ static const NSString *kkeyData = @"kKeyData";
 }
 
 - (void)clearCache {
+    if (self.log) {
+        NSLog(@"DKDataCache cache cleared");
+    }
     self.cacheDictionary = [[NSMutableDictionary alloc] init];
 }
 

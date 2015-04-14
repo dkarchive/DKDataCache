@@ -21,6 +21,11 @@
 @property (nonatomic, strong) NSData *data;
 
 /**
+ Number of elements in cache (default is 100).
+ */
+@property (nonatomic) NSInteger numberOfElements;
+
+/**
  Logging Boolean.
  */
 @property (nonatomic) BOOL log;

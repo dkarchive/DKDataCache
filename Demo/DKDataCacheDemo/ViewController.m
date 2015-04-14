@@ -28,6 +28,7 @@ NSString *cellId = @"cellId";
     self.title = @"DKDataCache";
     
     [DKDataCache sharedInstance].log = YES;
+    [DKDataCache sharedInstance].numberOfElements = 8;
     
     [self.tableView registerClass:[ImageViewCell class] forCellReuseIdentifier:cellId];
     

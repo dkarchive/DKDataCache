@@ -11,7 +11,7 @@ DKDataCache can be used to cache images retrieved from an URL
 
 # Installation
 
-## Cocoapods
+## [CocoaPods](https://cocoapods.org/)
 ``` ruby
 pod 'DKDataCache'
 ```

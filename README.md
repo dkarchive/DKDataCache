@@ -2,7 +2,7 @@
 
 Simple iOS Data Cache
 
-[![Build Status](https://travis-ci.org/dkhamsing/DKDataCache.svg?branch=master)](https://travis-ci.org/dkhamsing/DKDataCache)
+[![Build Status](https://api.travis-ci.org/dkhamsing/DKDataCache.svg?branch=master)](https://travis-ci.org/dkhamsing/DKDataCache)
 [![Version](https://img.shields.io/cocoapods/v/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
 [![License](https://img.shields.io/cocoapods/l/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
 [![Platform](https://img.shields.io/cocoapods/p/DKDataCache.svg?style=flat)](http://cocoadocs.org/docsets/DKDataCache)
@@ -50,7 +50,6 @@ DKDataCache includes a sample project in the `Demo` folder.
 # Contact
 - [github.com/dkhamsing](https://github.com/dkhamsing)
 - [twitter.com/dkhamsing](https://twitter.com/dkhamsing)
-- [Send a message](http://dkhamsing.tumblr.com/ask)
 
 # License
 DKDataCache is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
